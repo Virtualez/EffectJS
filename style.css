@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    user-select: none;
+    color: white;
+}
+
+.text span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    /* color: red; */
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px);
+    transform: translateX(300px) translateY(-300px) rotate(720deg) scale(5);
+
+}
